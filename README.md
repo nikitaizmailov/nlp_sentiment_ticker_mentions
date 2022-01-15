@@ -1,5 +1,5 @@
 # nlp_sentiment_ticker_mentions
-Using Spark NLP and SpaCy NLP to extract the stock tickers from comments, to find mentions for each stock and train and utlise sentiment model to classify comments as positive, negative or neutral sentiment. Used 100,000 comments as a dataset downloaded from 12th Jan 2021 - 12th Dec 2020.
+Using Spark NLP and SpaCy NLP to extract the stock tickers from comments, to find mentions for each stock and train and utlise sentiment model to classify comments as positive, negative or neutral sentiment. Used Pushshift API to download 100,000 comments between 12th Jan 2021 - 12th Dec 2020.
 
 Spark NLP pipeline built to preprocess the comments:
 DocumentAssembler -> Tokenizer -> Normaliser -> ViveknSentimentModel -> Finisher -> Outputs Final Sentiment column
